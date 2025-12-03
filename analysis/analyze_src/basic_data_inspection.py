@@ -44,7 +44,7 @@ class SummaryStatisticsInspectionStrategy(DataInspectionStrategy):
         print("\nSummary Statistics (Numerical Features):")
         print(df.describe())
         print("\nSummary Statistics (Categorical Features):")
-        print(df.describe(include=["0"]))
+        print(df.describe(include=["O"]))
 
 class DataInspector:
     def __init__(self, strategy: DataInspectionStrategy):
