@@ -31,4 +31,4 @@ def feature_engineering_step(
         raise ValueError(f"Unstopported feature ngineering strategy: {strategy}")
     
     transformed_df = engineer.apply_feature_engineering(df)
-    return df
+    return transformed_df
