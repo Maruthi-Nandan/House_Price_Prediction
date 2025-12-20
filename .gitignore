@@ -1,3 +1,5 @@
 extracted_data
 venv
 .zen
+data
+__pycache__/
