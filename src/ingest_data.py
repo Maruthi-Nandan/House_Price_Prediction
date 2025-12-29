@@ -31,7 +31,7 @@ class ZipDataIngestor(DataIngestor):
             raise ValueError("Muliple CSV files found. Please specify which one to use.")
         
         # Read the CSV into a DataFrame
-        csv_file_path = os.path.join("extracted data", csv_files[0])
+        csv_file_path = os.path.join("extracted_data", csv_files[0])
         df = pd.read_csv(csv_file_path)
         
         return df

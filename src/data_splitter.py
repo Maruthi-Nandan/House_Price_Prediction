@@ -64,7 +64,7 @@ class DataSplitter:
         Parameters:
         strategy (DataSplittingStrategy): The strategy to be used for data splitting.
         """
-        self.strategy = strategy
+        self._strategy = strategy
     
     def set_strategy(self, strategy: DataSplittingStrategy):
         """

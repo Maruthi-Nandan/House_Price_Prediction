@@ -51,6 +51,9 @@ class RegressionModelEvaluationStrategy(ModelEvaluationStrategy):
         
         metrics = {"Mean Squared Error": mse, "R-Squared": r2}
         
+        logging.info(f"Model Evaluation Metrics: {metrics}")
+        return metrics
+        
 class ModelEvaluator:
     def __init__(self, strategy: ModelEvaluationStrategy):
         """
